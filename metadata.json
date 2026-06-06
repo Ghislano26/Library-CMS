@@ -1,0 +1,6 @@
+{
+  "name": "Bibliothèque & CMS de Livres",
+  "description": "Une bibliothèque en ligne moderne et intuitive intégrant un lecteur d'e-books et un CMS complet de création chapitrée.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
