@@ -80,13 +80,13 @@ export default function Library({ books, onSelectBook, onEnterAdmin }: LibraryPr
           <div className="bg-white rounded-2xl p-6 max-w-sm w-full shadow-2xl border border-stone-100">
             <h3 className="font-serif font-extrabold text-lg text-stone-900 mb-2">Accès Sécurisé Auteur</h3>
             <p className="text-stone-500 text-xs mb-4">
-              Pour accéder au CMS de rédaction, veuillez valider le formulaire. (Laissez vide pour contourner rapidement ou cliquez sur Confirmer).
+              Pour accéder au CMS de rédaction, veuillez saisir le mot de passe admin.
             </p>
             
             <form onSubmit={handleAdminGateCheck} className="space-y-4">
               <div>
                 <label className="block text-[10px] uppercase font-mono tracking-wider font-semibold text-stone-400 mb-1">
-                  Code d'accès Auteur (vide ou "admin")
+                  Code d'accès Auteur
                 </label>
                 <input
                   type="password"
@@ -100,7 +100,7 @@ export default function Library({ books, onSelectBook, onEnterAdmin }: LibraryPr
                   autoFocus
                 />
                 {passcodeError && (
-                  <span className="text-red-650 text-xs mt-1 block">Code incorrect. Laissez le champ vide si vous n'avez pas encore défini de code.</span>
+                  <span className="text-red-650 text-xs mt-1 block">Code incorrect.</span>
                 )}
               </div>
 
